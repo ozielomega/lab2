@@ -1,3 +1,7 @@
+/**
+ * 
+ */
+
 package question9;
 
 import java.awt.Graphics;
@@ -12,6 +16,15 @@ import question7.Door;
 
 import java.awt.geom.Line2D;
 
+/**
+ * Models a house out of lines and rectangles,
+ * uses the Door class to determine if the door of 
+ * the house is open or closed, the with that information
+ * the door would be either filled or outlined
+ * 
+ * @author Oziel Guerra 
+ *
+ */
 public class House {
 
 	public House() {

@@ -1,4 +1,4 @@
-package question1;
+package question2;
 
 /**
  * This program takes 3 String sentences with spaces and then creates a String "message"
