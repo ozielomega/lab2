@@ -4,8 +4,8 @@ public class DoorTester {
 	/**
 	 * Tests the methods of the Door class
 	 * 
-	 * @param args
-	 *            not used
+	 * @param args not used
+	 *             
 	 */
 	public static void main(String[] args) {
 		Door frontDoor = new Door("Front", "open");

@@ -8,10 +8,24 @@ import javax.swing.JComponent;
 import javax.swing.JFrame;
 
 import java.awt.geom.Line2D;
-
+/**
+* This program creates one triangle using 2D lines and drawing them on a frame.
+* <p>
+* Oziel Guerra
+* 100248618
+* May 12 2015
+* CPSC 1181
+* Lab 2, Part 1
+*
+*/
 public class Triangle {
 
-	
+	/**
+	 * 
+	 * This method draws the triangle on the frame object.
+	 * 
+	 * @param g Graphics object
+	 */
 	public static void draw(Graphics g) {
 		//point 1
 		final double pointx1 = 250;

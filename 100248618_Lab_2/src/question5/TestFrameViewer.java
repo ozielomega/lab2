@@ -4,13 +4,30 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import javax.swing.JFrame;
 import javax.swing.JComponent;
-
+/**
+* This program creates a frame, with specific width and height.
+* <p>
+* Oziel Guerra
+* 100248618
+* May 12 2015
+* CPSC 1181
+* Lab 2, Part 1
+*
+*/
 public class TestFrameViewer {
+	/**
+	 * this method draws graphics on the frame
+	 * 
+	 * @param g graphics object
+	 */
 	public static void draw(Graphics g) {
 		Graphics2D g2 = (Graphics2D) g;
 		// your code goes here
 	}
-
+	/**
+	 * Sets the frame to be displayed
+	 * @param args not used
+	 */
 	public static void main(String[] args) {
 		JFrame frame = new JFrame();
 		final int FRAME_WIDTH = 250;

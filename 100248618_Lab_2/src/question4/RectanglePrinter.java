@@ -1,6 +1,11 @@
 package question4;
 import java.awt.Rectangle;
 /**
+* This program creates rectangles, to practice and
+* learn how objects work and why do both change at the same time,
+* it also uses the grow method to have a better understanding of the
+* way the objects are manipulated
+* 
 * Oziel Guerra
 * 100248618
 * May 12 2015

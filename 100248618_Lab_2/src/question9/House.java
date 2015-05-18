@@ -20,9 +20,12 @@ import java.awt.geom.Line2D;
  * Models a house out of lines and rectangles,
  * uses the Door class to determine if the door of 
  * the house is open or closed, the with that information
- * the door would be either filled or outlined
+ * the door would be either filled or outlined.
  * 
  * @author Oziel Guerra 
+ * <p>
+ * May 18, 2015
+ * CSPC 1181
  *
  */
 public class House {
@@ -31,6 +34,11 @@ public class House {
 		// TODO Auto-generated constructor stub
 	}
 
+	/**
+	 * This method draws the objects necessary to display an abstraction of a house
+	 * 
+	 * @param g Graphics object
+	 */
 	public static void draw(Graphics g) {
 
 		Graphics2D g2 = (Graphics2D) g;
@@ -58,14 +66,22 @@ public class House {
 		// door
 		Door houseDoor = new Door("front door", "open");
 		Rectangle doorBounds = new Rectangle(225, 300, 50, 100);
+		// sets bounds of the door object, bounds are specified by the rectangle doorBounds
 		houseDoor.setBounds(doorBounds);
-		if (houseDoor.getState() == "open") {
+		//sets door to open
+		houseDoor.open();
+		//checks if houseDoor is open
+		if (houseDoor.isOpen()) {
 			g2.fill(houseDoor);
 		} else {
 			g2.draw(houseDoor);
 		}
 	}
 
+	/**
+	 * Sets the frame for the abstraction of the house
+	 * @param args not used
+	 */
 	public static void main(String[] args) {
 		JFrame frame = new JFrame();
 

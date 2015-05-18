@@ -8,9 +8,26 @@ import java.awt.geom.Ellipse2D;
 
 import javax.swing.JComponent;
 import javax.swing.JFrame;
-
+/**
+* This program creates 5 ellipses, starting from a diameter of
+* 40, being the first ellipse, and ending with a diameter of 200. being the last ellipse.
+* This ellipses are created with random colors and all of them have a common point.
+* <p>
+* Oziel Guerra
+* 100248618
+* May 12 2015
+* CPSC 1181
+* Lab 2, Part 1
+*
+*/
 public class Ellipse {
 
+	/**
+	 * 
+	 * This method draws the ellipses on the frame object.
+	 * 
+	 * @param g Graphics object
+	 */
 	public static void draw(Graphics g) {
 		Graphics2D g2 = (Graphics2D) g;
 		int maxCircles = 5;
